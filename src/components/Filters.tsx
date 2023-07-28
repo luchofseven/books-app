@@ -21,9 +21,7 @@ export default function Filters (): JSX.Element {
 
   return (
     <section className="filters-section">
-
         <aside>
-
             <label htmlFor="genre-filter">
                 <small>Filtrar por género</small>
                 <select name="genre-fitler" id="genre-filter" onChange={handleChange}>
@@ -31,9 +29,7 @@ export default function Filters (): JSX.Element {
                   {availableGenres?.map(genre => <option key={genre} value={genre}>{genre}</option>)}
                 </select>
             </label>
-
         </aside>
-
     </section>
   )
 }

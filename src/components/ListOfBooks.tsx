@@ -9,13 +9,10 @@ import Title from './Title'
 export default function ListOfBooks (): JSX.Element {
   const { books, updateReadList } = useBooksStore()
 
-  return (
-    <>
-
+  return (<>
       <Title title="LIBROS" />
       <Filters />
       <SubTitle />
-
       <div className="top" />
       <div className="mid">
         <div className="mid-table" />
@@ -38,11 +35,8 @@ export default function ListOfBooks (): JSX.Element {
           </div>
         </section>
       </div>
-
       <div className="bottom">
         <ListOfReadBooks />
       </div>
-
-    </>
-  )
+  </>)
 }

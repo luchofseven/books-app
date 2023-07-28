@@ -37,7 +37,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 30%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -250,12 +250,13 @@ img {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 2rem;
-  right: 2rem;
+  width: auto;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 1.5rem;
-  padding: 2rem 0 0 0;
+  padding: 2rem 0 0 1rem;
+  transition: all 1s ease-out;
+  margin-top: 1rem;
 }
 
 .content-section .carousel-container .carousel .book {
@@ -384,16 +385,29 @@ img {
   overflow: hidden;
 }
 
+.content-section-to-read .carousel-container .text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .content-section-to-read .carousel-container .carousel {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 2rem;
-  right: 2rem;
+  width: auto;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 1.5rem;
-  padding: 2rem 0 0 0;
+  padding: 2rem 0 0 1rem;
+  margin-top: 1rem;
+  transition: all 1s ease-out;
 }
 
 .content-section-to-read .carousel-container .carousel .book {
@@ -503,7 +517,7 @@ img {
     border-radius: 50%;
   }
   .counter-books > div h4 {
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin: 0;
   }
   .filters-section {
@@ -523,7 +537,7 @@ img {
     align-items: center;
     gap: 1rem;
     font-weight: bold;
-    font-size: .8rem;
+    font-size: 0.8rem;
     color: #2c1810;
   }
   .filters-section aside label select {
@@ -532,11 +546,11 @@ img {
     padding: 0.5rem;
     color: #2c1810;
     font-weight: normal;
-    font-size: .8rem;
+    font-size: 0.8rem;
     background-color: #f3e5d0;
   }
   .filters-section aside label select option {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .footer-section {
     background-color: #2c1810;
@@ -734,7 +748,7 @@ img {
   }
   .content-section-to-read {
     position: absolute;
-    bottom: 0rem;
+    bottom: -0.5rem;
     width: 100%;
     margin: 0rem auto;
     min-height: 250px;
@@ -774,7 +788,7 @@ img {
     transform: scale(1.2);
   }
   .content-section-to-read .cards-container .btn-left {
-    left: 0rem;
+    left: 0;
   }
   .content-section-to-read .cards-container .btn-right {
     right: 0;
@@ -786,6 +800,17 @@ img {
     margin: 0 auto;
     position: relative;
     overflow-x: scroll;
+  }
+  .content-section-to-read .carousel-container .text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   .content-section-to-read .carousel-container .carousel {
     position: absolute;

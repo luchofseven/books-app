@@ -53,7 +53,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 30%;
+  width: 50%;
   margin: 0 auto;
 
   & > div {
@@ -272,12 +272,13 @@ img {
       position: absolute;
       top: 0;
       bottom: 0;
-      left: 2rem;
-      right: 2rem;
+      width: auto;
       display: flex;
-      justify-content: start;
+      justify-content: flex-start;
       gap: 1.5rem;
-      padding: 2rem 0 0 0;
+      padding: 2rem 0 0 1rem;
+      transition: all 1s ease-out;
+      margin-top: 1rem;
 
       .book {
         position: relative;
@@ -406,16 +407,29 @@ img {
     position: relative;
     overflow: hidden;
 
+    .text {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
     .carousel {
       position: absolute;
       top: 0;
       bottom: 0;
-      left: 2rem;
-      right: 2rem;
+      width: auto;
       display: flex;
-      justify-content: start;
+      justify-content: flex-start;
       gap: 1.5rem;
-      padding: 2rem 0 0 0;
+      padding: 2rem 0 0 1rem;
+      margin-top: 1rem;
+      transition: all 1s ease-out;
 
       .book {
         position: relative;
@@ -484,7 +498,6 @@ img {
 }
 
 @media (max-width: 1023px) {
-  
   // TITLE
 
   .header-section {
@@ -535,7 +548,7 @@ img {
       }
 
       h4 {
-        font-size: .8rem;
+        font-size: 0.8rem;
         margin: 0;
       }
     }
@@ -560,7 +573,7 @@ img {
         align-items: center;
         gap: 1rem;
         font-weight: bold;
-        font-size: .8rem;
+        font-size: 0.8rem;
         color: $text-color;
 
         select {
@@ -569,11 +582,11 @@ img {
           padding: 0.5rem;
           color: $text-color;
           font-weight: normal;
-          font-size: .8rem;
+          font-size: 0.8rem;
           background-color: $main-color;
 
           option {
-            font-size: .8rem;
+            font-size: 0.8rem;
           }
         }
       }
@@ -812,7 +825,7 @@ img {
 
   .content-section-to-read {
     position: absolute;
-    bottom: 0rem;
+    bottom: -0.5rem;
     width: 100%;
     margin: 0rem auto;
     min-height: 250px;
@@ -853,7 +866,7 @@ img {
       }
 
       .btn-left {
-        left: 0rem;
+        left: 0;
       }
 
       .btn-right {
@@ -868,6 +881,18 @@ img {
       margin: 0 auto;
       position: relative;
       overflow-x: scroll;
+
+      .text {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
 
       .carousel {
         position: absolute;
