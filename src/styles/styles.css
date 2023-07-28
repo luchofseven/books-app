@@ -28,7 +28,7 @@ img {
   width: 30%;
   margin: 0.5rem auto 0 auto;
   padding: 0.5rem 0;
-  color: #f8f3ed;
+  color: #2c1810;
   font-weight: bold;
   text-align: center;
 }
@@ -369,7 +369,7 @@ img {
 }
 
 .content-section-to-read .cards-container .btn-left {
-  left: 0rem;
+  left: 0;
 }
 
 .content-section-to-read .cards-container .btn-right {
@@ -480,7 +480,7 @@ img {
     width: 70%;
     margin: 0.5rem auto 0 auto;
     padding: 0.5rem 0;
-    color: #f8f3ed;
+    color: #2c1810;
     font-weight: bold;
     text-align: center;
   }
