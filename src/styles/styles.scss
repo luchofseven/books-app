@@ -33,9 +33,19 @@ img {
   height: auto;
 }
 
+// MAIN TITLE
+
+.main-title {
+  text-align: center;
+  font-family: $text-secondary;
+  color: $text-color;
+  text-decoration: underline;
+}
+
 // TITLE
 
 .header-section {
+  margin-bottom: 2rem;
   h3 {
     background-color: $third-color;
     border-radius: 5rem;
@@ -116,6 +126,21 @@ img {
         color: $text-color;
         font-weight: bold;
         background-color: $main-color;
+      }
+    }
+
+    button {
+      background-color: $main-color;
+      border: none;
+      border-radius: 5rem;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+      font-family: $text-main;
+      cursor: pointer;
+      transition: background-color 200ms ease-in-out;
+
+      &:hover {
+        background-color: $third-color;
       }
     }
   }
@@ -268,6 +293,18 @@ img {
     position: relative;
     overflow: hidden;
 
+    .text {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
     .carousel {
       position: absolute;
       top: 0;
@@ -308,6 +345,19 @@ img {
           left: 0;
           bottom: 0;
           right: 0;
+          transition: all 300ms ease;
+
+          &:hover {
+            background-color: rgba($color: $black-color, $alpha: 0.5);
+            &::after {
+              background-color: $white-color;
+              padding: 0.5rem 1rem;
+              border-radius: 1rem;
+              content: "Añadir";
+              color: $black-color;
+              font-weight: bold;
+            }
+          }
         }
 
         .book-left-shadow {
@@ -458,6 +508,19 @@ img {
           left: 0;
           bottom: 0;
           right: 0;
+          transition: all 300ms ease;
+
+          &:hover {
+            background-color: rgba($color: $black-color, $alpha: 0.5);
+            &::after {
+              background-color: $white-color;
+              padding: 0.5rem 1rem;
+              border-radius: 1rem;
+              content: "Eliminar";
+              color: $black-color;
+              font-weight: bold;
+            }
+          }
         }
 
         .book-left-shadow {

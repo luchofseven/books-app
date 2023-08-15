@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Montserrat:wght@400;500;600&display=swap");
 html {
   box-sizing: border-box;
@@ -20,6 +21,17 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.main-title {
+  text-align: center;
+  font-family: "Libre Caslon Text", sans-serif;
+  color: #2c1810;
+  text-decoration: underline;
+}
+
+.header-section {
+  margin-bottom: 2rem;
 }
 
 .header-section h3 {
@@ -101,6 +113,21 @@ img {
   color: #2c1810;
   font-weight: bold;
   background-color: #f3e5d0;
+}
+
+.filters-section aside button {
+  background-color: #f3e5d0;
+  border: none;
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+}
+
+.filters-section aside button:hover {
+  background-color: #daaa63;
 }
 
 .footer-section {
@@ -246,6 +273,18 @@ img {
   overflow: hidden;
 }
 
+.content-section .carousel-container .text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .content-section .carousel-container .carousel {
   position: absolute;
   top: 0;
@@ -288,6 +327,20 @@ img {
   left: 0;
   bottom: 0;
   right: 0;
+  transition: all 300ms ease;
+}
+
+.content-section .carousel-container .carousel .book .book-btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-section .carousel-container .carousel .book .book-btn:hover::after {
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  content: "Añadir";
+  color: #000000;
+  font-weight: bold;
 }
 
 .content-section .carousel-container .carousel .book .book-left-shadow {
@@ -438,6 +491,20 @@ img {
   left: 0;
   bottom: 0;
   right: 0;
+  transition: all 300ms ease;
+}
+
+.content-section-to-read .carousel-container .carousel .book .book-btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-section-to-read .carousel-container .carousel .book .book-btn:hover::after {
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  content: "Eliminar";
+  color: #000000;
+  font-weight: bold;
 }
 
 .content-section-to-read .carousel-container .carousel .book .book-left-shadow {

@@ -1,16 +1,17 @@
-import { useBooksStore } from '../store/BooksStore'
+import { type ISubtitle } from '../types'
 
-export default function SubTitle (): JSX.Element {
-  const { books, booksToRead } = useBooksStore()
-
+export default function SubTitle ({
+  availableBooks,
+  booksPending
+}: ISubtitle): JSX.Element {
   return (
     <div className="counter-books">
       <div>
-        <span>{books.length}</span>
-        <h4>libros pendientes</h4>
+        <span>{availableBooks}</span>
+        <h4>libros disponibles</h4>
       </div>
       <div>
-        <span>{booksToRead.length}</span>
+        <span>{booksPending}</span>
         <h4>en la lista de lectura</h4>
       </div>
     </div>
