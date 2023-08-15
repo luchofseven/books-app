@@ -8,15 +8,13 @@ export default function Filter ({
 }: IFilter): JSX.Element {
   const [availableGenres, setAvailableGenres] = useState<string[]>([])
 
-  const getGenresData = async (): Promise<void> => {
-    const genres = await getGenres()
-    setAvailableGenres(genres)
-  }
-
   useEffect(() => {
-    getGenresData().catch((error) => {
-      console.log(error)
-    })
+    const getGenresData = async (): Promise<void> => {
+      const genres = await getGenres()
+      setAvailableGenres(genres)
+    }
+
+    getGenresData()
   }, [])
 
   const handleGenreChange = (genre: string): void => {

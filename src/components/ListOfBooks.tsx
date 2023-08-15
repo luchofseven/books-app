@@ -53,11 +53,7 @@ export default function ListOfBooks (): JSX.Element {
       }
     }
 
-    books.length === 0 &&
-      booksToRead.length === 0 &&
-      getBooksData().catch((error) => {
-        console.error('Error:', error)
-      })
+    books.length === 0 && booksToRead.length === 0 && getBooksData()
   }, [reset])
 
   useEffect(() => {
