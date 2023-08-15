@@ -22,7 +22,7 @@
 
 **Tecnologías:** **React, TypeScript, Sass**.
 
-**Despliegue:** [Books Store App](https://books-app-pied.vercel.app/)
+**Despliegue:** [Libros Sorbil](https://books-app-pied.vercel.app/)
 ##
 
 
